@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "650f6746-42d0-419f-9077-f476520d422f",
+		"name": "CREDIT-MONGODB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23067080"
+	},
+	"item": [
+		{
+			"name": "Crear un Crédito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerId\": \"12345678\",\r\n  \"creditType\": \"PERSONAL\",\r\n  \"amount\": 5000.00,\r\n  \"balance\": 5000.00,\r\n  \"creditLimit\": null,\r\n  \"isActive\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/api/credits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"credits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los créditos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/api/credits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"credits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener crédito por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/api/credits/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"credits",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar crédito",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/api/credits/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"credits",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,25 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: transactions-service
+  config:
+    import: "optional:configserver:http://localhost:8888"  # Configuración correcta para importar desde Config Server
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/transactionsdb
+
+logging:
+  level:
+    root: INFO
+
+springdoc:
+  paths-to-match: /**
+  default-produces-media-type: application/json
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+  api-docs:
+    path: /v3/api-docs
