@@ -69,7 +69,8 @@ public class BankAccountController {
     @PostMapping
     public Mono<ResponseEntity<BankAccount>> createAccount(@Valid @RequestBody BankAccount bankAccount) {
         return bankAccountService.save(bankAccount)
-                .map(savedAccount -> ResponseEntity.status(HttpStatus.CREATED).body(savedAccount));
+                .map(savedAccount -> ResponseEntity.status(HttpStatus.CREATED).body(savedAccount))
+                .defaultIfEmpty(ResponseEntity.badRequest().build());  // En caso de error de validación en el servicio
     }
 
     @Operation(summary = "Eliminar una cuenta bancaria por ID")

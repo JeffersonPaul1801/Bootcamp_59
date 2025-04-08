@@ -8,6 +8,6 @@ class AccountsServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
+		// Test context loading
 	}
-
 }

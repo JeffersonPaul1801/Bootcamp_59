@@ -15,31 +15,16 @@ import java.util.Map;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(ResourceNotFoundException.class)
-    @ResponseStatus(HttpStatus.NOT_FOUND)
-    public Mono<ResponseEntity<Map<String, String>>> handleNotFoundException(ResourceNotFoundException ex) {
-        log.error("Error: {}", ex.getMessage());
-        Map<String, String> errorResponse = new HashMap<>();
-        errorResponse.put("error", ex.getMessage());
-        return Mono.just(ResponseEntity.status(HttpStatus.NOT_FOUND).body(errorResponse));
-    }
-
     @ExceptionHandler(BadRequestException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public Mono<ResponseEntity<Map<String, String>>> handleBadRequestException(BadRequestException ex) {
-        log.error("Error: {}", ex.getMessage());
-        Map<String, String> errorResponse = new HashMap<>();
-        errorResponse.put("error", ex.getMessage());
-        return Mono.just(ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorResponse));
+    public String handleBadRequestException(BadRequestException ex) {
+        return ex.getMessage(); // Retorna el mensaje de error de la excepción
     }
 
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public Mono<ResponseEntity<Map<String, String>>> handleGeneralException(Exception ex) {
-        log.error("Error inesperado: {}", ex.getMessage());
-        Map<String, String> errorResponse = new HashMap<>();
-        errorResponse.put("error", "Internal Server Error");
-        return Mono.just(ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(errorResponse));
+    public String handleGeneralException(Exception ex) {
+        return "Ocurrió un error inesperado: " + ex.getMessage();
     }
 }
 
