@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "5b1e4cd9-da5f-418c-bbce-97cae1897de2",
+		"name": "OPERATIONS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43478669",
+		"_collection_link": "https://jefferson-1627124.postman.co/workspace/Jefferson's-Workspace~0b0bc216-2b6e-4025-8eb2-642adb0acdc2/collection/43478669-5b1e4cd9-da5f-418c-bbce-97cae1897de2?action=share&source=collection_link&creator=43478669"
+	},
+	"item": [
+		{
+			"name": "WithDraw",
+			"item": [
+				{
+					"name": "ListWithdraw",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8100/operation/withdraw/allWithdraw",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"operation",
+								"withdraw",
+								"allWithdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IdWithdraw",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8100/operation/withdraw/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"operation",
+								"withdraw",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateOperationWihtdraw",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8100/operation/withdraw/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"operation",
+								"withdraw",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deposit",
+			"item": [
+				{
+					"name": "ListDeposit",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "IdDeposit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8100/operation/deposit/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"operation",
+								"deposit",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateOperationDeposit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8100/operation/deposit/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8100",
+							"path": [
+								"operation",
+								"deposit",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

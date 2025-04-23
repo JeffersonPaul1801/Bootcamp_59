@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "116bb2ad-2949-4faa-a7c5-0ba119b7c2cc",
+		"name": "YANKIMOBILE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43478669",
+		"_collection_link": "https://jefferson-1627124.postman.co/workspace/Jefferson's-Workspace~0b0bc216-2b6e-4025-8eb2-642adb0acdc2/collection/43478669-116bb2ad-2949-4faa-a7c5-0ba119b7c2cc?action=share&source=collection_link&creator=43478669"
+	},
+	"item": [
+		{
+			"name": "ListYankiMobile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9095/yanki/allYanki",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"yanki",
+						"allYanki"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListPhoneYankiMobile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9095/yanki/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"yanki",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateYankiMobile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9095/yanki/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"yanki",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListDepositYankiMobile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9095/yanki/deposit/allYankiDeposit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"yanki",
+						"deposit",
+						"allYankiDeposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListDepositYankiMobile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9095/yanki/deposit/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"yanki",
+						"deposit",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListDepositPhoneYankiMobile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9095/yanki/deposit/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"yanki",
+						"deposit",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAccountYankiMobile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9095/yanki/account/yanki",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"yanki",
+						"account",
+						"yanki"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateDepositAccountYankiMobile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9095/yanki/account/deposit/yanki",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"yanki",
+						"account",
+						"deposit",
+						"yanki"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTranfererYankiMobile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9095/yanki/transferer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"yanki",
+						"transferer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAssociateDebitCardYankiMobile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9095/yanki/linkDebitCard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9095",
+					"path": [
+						"yanki",
+						"linkDebitCard"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

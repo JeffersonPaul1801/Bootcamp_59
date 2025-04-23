@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "20628af8-cbb1-494e-9a16-4cb56eb61efc",
+		"name": "DEBIT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43478669",
+		"_collection_link": "https://jefferson-1627124.postman.co/workspace/Jefferson's-Workspace~0b0bc216-2b6e-4025-8eb2-642adb0acdc2/collection/43478669-20628af8-cbb1-494e-9a16-4cb56eb61efc?action=share&source=collection_link&creator=43478669"
+	},
+	"item": [
+		{
+			"name": "CreatePayDebitCard",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAssociateCardAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7075/pay/associate-all-accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7075",
+					"path": [
+						"pay",
+						"associate-all-accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAccountPrimary",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7075/debit//set-primary-account/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7075",
+					"path": [
+						"debit",
+						"",
+						"set-primary-account",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTransactionDebitCard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7075/debit/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7075",
+					"path": [
+						"debit",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BalancePrincipalCardAccount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7075/debit//balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7075",
+					"path": [
+						"debit",
+						"",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateDebit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerId\": \"67cf238b1a75481093740a1f\",\r\n  \"accountIds\": [\"\"],\r\n  \"primaryAccountId\": \"\",\r\n  \"cardNumber\": \"1234567890123456\",\r\n  \"cvv\": \"864\",\r\n  \"expirationDate\": \"2029-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7075/debit/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7075",
+					"path": [
+						"debit",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

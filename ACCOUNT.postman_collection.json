@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "dc34888e-958f-443b-865e-7556ebfe2b13",
+		"name": "ACCOUNT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43478669",
+		"_collection_link": "https://jefferson-1627124.postman.co/workspace/Jefferson's-Workspace~0b0bc216-2b6e-4025-8eb2-642adb0acdc2/collection/43478669-dc34888e-958f-443b-865e-7556ebfe2b13?action=share&source=collection_link&creator=43478669"
+	},
+	"item": [
+		{
+			"name": "ListAccounts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typeAccount\": \"AHORRO\",\r\n    \"numberAccount\": \"4554 1234 9871 9112\",\r\n    \"keyAccount\": 1967,\r\n    \"availableBalanceAccount\": \"0\",\r\n    \"minimumOpeningBalance\": \"10\",\r\n    \"statusAccount\": \"A\",\r\n    \"idCustomer\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/account/allAccounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"allAccounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IdAccount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/account/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typeAccount\": \"AHORRO\",\r\n    \"numberAccount\": 4554123498719112,\r\n    \"keyAccount\": 1967,\r\n    \"availableBalanceAccount\": \"100\",\r\n    \"minimumOpeningBalance\": \"0\",\r\n    \"statusAccount\": \"A\",\r\n    \"idCustomer\": \"67cf1fd71a75481093740a1e\",\r\n    \"holders\": null,\r\n    \"authorizedSigners\": null,\r\n    \"debitCard\": null,\r\n    \"balance\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/account/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAccount",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typeAccount\": \"AHORRO\",\r\n    \"numberAccount\": 45541234987191,\r\n    \"keyAccount\": 1967,\r\n    \"availableBalanceAccount\": \"0\",\r\n    \"minimumOpeningBalance\": \"0\",\r\n    \"statusAccount\": \"A\",\r\n    \"idCustomer\": \"67cf1fd71a75481093740a1e\",\r\n    \"holders\": null,\r\n    \"authorizedSigners\": null,\r\n    \"debitCard\": null,\r\n    \"balance\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/account/update/67cf42008b334f1fbb2183d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"update",
+						"67cf42008b334f1fbb2183d6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAccount",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/account/delete/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"delete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BalanceAccount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/account/67cf42008b334f1fbb2183d6/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"67cf42008b334f1fbb2183d6",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerSummaryBalance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/account/balance-summary/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account",
+						"balance-summary",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

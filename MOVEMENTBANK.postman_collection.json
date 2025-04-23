@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "b7008cc1-9e64-464c-985e-e9513092a6e7",
+		"name": "MOVEMENTBANK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43478669",
+		"_collection_link": "https://jefferson-1627124.postman.co/workspace/Jefferson's-Workspace~0b0bc216-2b6e-4025-8eb2-642adb0acdc2/collection/43478669-b7008cc1-9e64-464c-985e-e9513092a6e7?action=share&source=collection_link&creator=43478669"
+	},
+	"item": [
+		{
+			"name": "MovementBankDebit",
+			"item": [
+				{
+					"name": "ListMovementBankDebit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7070/movementBank/debit/allMovementDebits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"debit",
+								"allMovementDebits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IdMovementBankDebit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7070/movementBank/debit/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"debit",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateMovementBankDebit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7070/movementBank/debit/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"debit",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateMovementBankDebit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7070/movementBank/debit/update/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"debit",
+								"update",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteMovementBankDebit",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7070/movementBank/debit/delete/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"debit",
+								"delete",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MovemetBankCredit",
+			"item": [
+				{
+					"name": "ListMovementBankCredit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7070/movementBank/credit/allMovementCredits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"credit",
+								"allMovementCredits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "IdMovementBankCredit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7070/movementBank/credit/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"credit",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateMovementBankCredit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7070/movementBank/credit/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"credit",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateMovementBankCredit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7070/movementBank/credit/update/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"credit",
+								"update",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteMovementBankCredit",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7070/movementBank/create/delete/{id}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"create",
+								"delete",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "ListMovementBankProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7070/movementBank/{idproduct}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"{idproduct}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListLastTransactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7070/movementBank/last/{cardid}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"movementBank",
+								"last",
+								"{cardid}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
